@@ -17,10 +17,11 @@ function App() {
   const dispatch = useDispatch();
 
   function click_map(e) {
-    console.log("click_map");
+    console.log("click_map", player_state);
 
-    const x = e.clientX - player_state.size_half;
-    const y = e.clientY - player_state.size;
+    const x =
+      e.clientX - player_state.size_half + window.visualViewport.pageLeft;
+    const y = e.clientY - player_state.size + window.visualViewport.pageTop;
 
     console.log(x, y);
 
@@ -43,7 +44,7 @@ function App() {
         <img
           onClick={click_map}
           draggable="false"
-          className="map position-fixed top-50 start-50 translate-middle"
+          className="map position-absolute top-50 start-50 translate-middle"
           src="/map-t.jpg"
         ></img>
         <Player></Player>

@@ -20,7 +20,7 @@ export function Player() {
     <div>
       <img
         style={player_style_img}
-        className="character position-fixed"
+        className="character position-absolute"
         src="/character-p.png"
       ></img>
     </div>
