@@ -1,27 +1,38 @@
 import "./App.css";
-import { useState, useEffect } from "react";
+
+import { useSelector, useDispatch } from "react-redux";
+
+//import { Counter } from "./features/counter/Counter";
+import { Player } from "./features/player/Player";
+
+import {
+  set_x,
+  set_y,
+  set_style_img,
+  select_all,
+} from "./features/player/slice";
 
 function App() {
-  let size_c = (window.visualViewport.height * 10) / 100;
-  const [x_c, set_x_c] = useState(100);
-  const [y_c, set_y_c] = useState(100);
-
-  const [styles_c, set_styles_c] = useState({
-    transform: `translateX(${x_c}px)`,
-  });
+  const player_state = useSelector(select_all);
+  const dispatch = useDispatch();
 
   function click_map(e) {
-    console.log(e.clientY,size_c);
-    set_x_c(e.clientX);
-    set_y_c(e.clientY);
-    set_styles_c({
-      transform: `translate(${e.clientX - (size_c / 2)}px,${e.clientY - size_c}px)`,
-    });
-  }
+    console.log("click_map");
 
-  useEffect(() => {
-    size_c = (window.visualViewport.height * 10) / 100;
-  }, []);
+    const x = e.clientX - player_state.size_half;
+    const y = e.clientY - player_state.size;
+
+    console.log(x, y);
+
+    dispatch(set_x(x));
+    dispatch(set_y(y));
+
+    dispatch(
+      set_style_img({
+        transform: `translate(${x}px,${y}px)`,
+      })
+    );
+  }
 
   return (
     <div>
@@ -35,11 +46,7 @@ function App() {
           className="map position-fixed top-50 start-50 translate-middle"
           src="/map-t.jpg"
         ></img>
-        <img
-          style={styles_c}
-          className="character position-fixed"
-          src="/character-p.png"
-        ></img>
+        <Player></Player>
       </div>
     </div>
   );
