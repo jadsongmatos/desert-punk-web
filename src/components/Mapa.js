@@ -8,7 +8,7 @@ function Mapa() {
         className="map-b position-absolute top-50 start-50 translate-middle"
         src="/map-t.jpg"
       ></img>
-      <div className="wrapper">
+      <div className="position-absolute top-50 start-50 translate-middle wrapper">
         <div className="floor">
           <div className="row">
             <div data-cords="[0,0]" className="tile"></div>
