@@ -3,10 +3,20 @@
   min-height: 100%;
   min-width: 100%;
   z-index: -1;
-  
+}
+
+.map-b{
+  min-height: 100%;
+  min-width: 100%;
 }
 
 .character{
   height: 10vh;
   width: auto;
+}
+
+td {
+  border: 1px solid !important;
+  height: 50px !important;
+  width: 50px !important;
 }

@@ -6,6 +6,7 @@ import { useSelector, useDispatch } from "react-redux";
 //import { Counter } from "./features/counter/Counter";
 import { Player } from "./features/player/Player";
 import Camera from "./components/Camera";
+import Mapa from "./components/Mapa";
 
 import {
   set_x,
@@ -39,17 +40,12 @@ function App() {
 
   return (
     <div>
-      <Camera />
       <header>
         <p>header</p>
       </header>
       <div>
-        <img
-          onClick={click_map}
-          draggable="false"
-          className="map position-absolute top-50 start-50 translate-middle"
-          src="/map-t.jpg"
-        ></img>
+        <Mapa nClick={click_map} />
+
         <Player></Player>
       </div>
     </div>

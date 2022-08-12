@@ -1,0 +1,53 @@
+.wrapper {
+    position: absolute;
+    width: 590px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.floor {
+    transform: rotateX(55deg) rotateZ(45deg);
+    transform-style: preserve-3d;
+    font-size: 0;
+}
+
+.floor .tile {
+    font-size: 11pt;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    background: rgba(0, 0, 0, 0);
+    width: 48px;
+    height: 48px;
+    margin: 0;
+    box-shadow: 0 0 0 .1em hsla(0, 0%, 0%, .2);
+    border: solid 1px rgb(0, 0, 0);
+    line-height: 48px;
+    text-align: center;
+    position: relative;
+    vertical-align: top;
+}
+
+.map {
+    max-height: max-content;/*100vmax;*/
+    min-height: 100%;
+    min-width: 100%;
+    z-index: -1;
+  }
+  
+  .map-b{
+    min-height: 100%;
+    min-width: 100%;
+  }
+  
+  .character{
+    height: 10vh;
+    width: auto;
+  }
+  
+  td {
+    border: 1px solid !important;
+    height: 50px !important;
+    width: 50px !important;
+  }
+  
