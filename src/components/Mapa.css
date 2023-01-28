@@ -1,50 +1,64 @@
-.wrapper {
-
-    min-height: 100%;
-  min-width: 100%;
+.grid {
+  width: 100vmax;
+  height: 100vmax;
+  margin: 0 auto;
+  background: #ccc;
 }
 
-.floor {
-  transform: rotateX(45deg) rotateZ(45deg);
-  transform-style: preserve-3d;
-  font-size: 0;
+.grid::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
-.floor .tile {
-  font-size: 11pt;
-  color: rgb(0, 0, 0);
-  display: inline-block;
-  background: rgba(0, 0, 0, 0);
-  width: 48px;
-  height: 48px;
-  margin: 0;
-  box-shadow: 0 0 0 0.1em hsla(0, 0%, 0%, 0.2);
+.background-image-grid {
+  height: 100vmax;
+  width: 100vmax;
+}
+
+.grid-item {
+  width: 21.833%;
+  padding-bottom: 21.833%;
+  overflow: hidden;
+  float: left;
   border: solid 1px rgb(0, 0, 0);
-  line-height: 48px;
+  transform: rotate(45deg);
+  margin: 5.5%;
+  margin-top: -11%;
+}
+
+.grid-item:nth-child(1),
+.grid-item:nth-child(2),
+.grid-item:nth-child(3),
+.grid-item:nth-child(4) {
+   margin-top: 5%;
+}
+
+.grid-item:nth-child(5n+5) {
+  margin-left: 21.9%;
+}
+
+.grid-item:nth-child(5n+7) {
+  clear:left;
+}
+
+.grid-item:nth-child(5n+7):last-of-type {
+margin-left: 38.25%;
+}
+
+.grid-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.grid-inner {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-45deg);
   text-align: center;
-  position: relative;
-  vertical-align: top;
-}
-
-.map {
-  max-height: max-content; /*100vmax;*/
-  min-height: 100%;
-  min-width: 100%;
-  z-index: -1;
-}
-
-.map-b {
-  min-height: 100%;
-  min-width: 100%;
-}
-
-.character {
-  height: 10vh;
-  width: auto;
-}
-
-td {
-  border: 1px solid !important;
-  height: 50px !important;
-  width: 50px !important;
+  padding-top: 40%;
+  font-size: 2em;
 }

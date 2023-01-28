@@ -18,7 +18,7 @@ function App() {
       <div>
         <Mapa />
 
-        <Player></Player>
+        {<Player></Player>}
       </div>
     </div>
   );
