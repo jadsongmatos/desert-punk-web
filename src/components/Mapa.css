@@ -1,64 +1,89 @@
-.grid {
+.map{
+  height: 100vmax;
+  width: 100vmax;
+  overflow: hidden;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 10%;
   width: 100vmax;
   height: 100vmax;
-  margin: 0 auto;
-  background: #ccc;
+  position: relative;
 }
 
-.grid::after {
+.grid-container::after {
   content: "";
   display: block;
   clear: both;
 }
 
-.background-image-grid {
+.background-image {
   height: 100vmax;
   width: 100vmax;
+
 }
 
 .grid-item {
-  width: 21.833%;
-  padding-bottom: 21.833%;
-  overflow: hidden;
-  float: left;
-  border: solid 1px rgb(0, 0, 0);
+  width: 25vmax;
+  height: 25vmax;
   transform: rotate(45deg);
-  margin: 5.5%;
-  margin-top: -11%;
+  border: solid 1px rgb(0, 0, 0);
 }
 
-.grid-item:nth-child(1),
-.grid-item:nth-child(2),
-.grid-item:nth-child(3),
-.grid-item:nth-child(4) {
-   margin-top: 5%;
+.grid-item:nth-child(8n + 5) {
+  margin-left: -70%;
+  margin-top: -70%;
 }
 
-.grid-item:nth-child(5n+5) {
-  margin-left: 21.9%;
+.grid-item:nth-child(8n + 6) {
+  margin-left: -70%;
+  margin-top: -70%;
 }
 
-.grid-item:nth-child(5n+7) {
-  clear:left;
+.grid-item:nth-child(8n + 7) {
+  margin-left: -70%;
+  margin-top: -70%;
 }
 
-.grid-item:nth-child(5n+7):last-of-type {
-margin-left: 38.25%;
+.grid-item:nth-child(8n + 8) {
+  margin-left: -70%;
+  margin-top: -70%;
 }
 
-.grid-item:hover {
-  background: rgba(255, 255, 255, 0.2);
+.grid-item:nth-child(8n + 9) {
+  margin-left: 0%;
+  margin-top: -70%;
 }
 
-.grid-inner {
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: rotate(-45deg);
-  text-align: center;
-  padding-top: 40%;
-  font-size: 2em;
+.grid-item:nth-child(8n + 10) {
+  margin-left: 0%;
+  margin-top: -70%;
+}
+
+.grid-item:nth-child(8n + 11) {
+  margin-left: 0%;
+  margin-top: -70%;
+}
+
+.grid-item:nth-child(8n + 12) {
+  margin-left: 0%;
+  margin-top: -70%;
+}
+
+.grid-item:nth-child(8n + 13) {
+  margin-left: -70%;
+}
+
+.grid-item:nth-child(8n + 14) {
+  margin-left: -70%;
+}
+
+.grid-item:nth-child(8n + 15) {
+  margin-left: -70%;
+}
+
+.grid-item:nth-child(8n + 16) {
+  margin-left: -70%;
 }

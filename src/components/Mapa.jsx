@@ -32,26 +32,30 @@ function Mapa() {
   }
 
   return (
-    <div className="grid position-absolute" onClick={click_map}>
-      <img
-        draggable="false"
-        alt="map"
-        className="position-absolute background-image-grid"
-        src="/map-t.jpg"
-      ></img>
-      <div className="grid-item"></div>
-      <div className="grid-item"></div>
-      <div className="grid-item"></div>
-      <div className="grid-item"></div>
-      <div className="grid-item"></div>
-      <div className="grid-item"></div>
-      <div className="grid-item"></div>
-      <div className="grid-item"></div>
-      <div className="grid-item"></div>
-      <div className="grid-item"></div>
-      <div className="grid-item"></div>
-      <div className="grid-item"></div>
-      <div className="grid-item"></div>
+    <div className="map position-absolute" onClick={click_map}>
+      <img alt="texture" src="/map-t.jpg" className="background-image position-absolute" />
+      <div class="grid-container">
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+      </div>
     </div>
   );
 }
