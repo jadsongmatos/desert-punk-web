@@ -1,8 +1,4 @@
-import { useEffect, useState } from "react";
-
 import "./App.css";
-import { useSelector, useDispatch } from "react-redux";
-
 import { Player } from "./features/player/Player";
 import Camera from "./components/Camera";
 import Mapa from "./components/Mapa";

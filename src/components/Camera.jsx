@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+const scale = 64
+
 function Camera() {
   const [update, set_update] = useState(0);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -9,15 +11,15 @@ function Camera() {
     const size_marginY = (window.visualViewport.height * 10) / 100;
 
     if (mousePosition.x < size_marginX) {
-      window.scroll(window.scrollX - 1, window.scrollY);
+      window.scroll(window.scrollX - scale, window.scrollY);
     } else if (mousePosition.x > window.visualViewport.width - size_marginX) {
-      window.scroll(window.scrollX + 1, window.scrollY);
+      window.scroll(window.scrollX + scale, window.scrollY);
     }
 
     if (mousePosition.y < size_marginY) {
-      window.scroll(window.scrollX, window.scrollY - 1);
+      window.scroll(window.scrollX, window.scrollY - scale);
     } else if (mousePosition.y > window.visualViewport.height - size_marginY) {
-      window.scroll(window.scrollX, window.scrollY + 1);
+      window.scroll(window.scrollX, window.scrollY + scale);
     }
   };
 
@@ -47,7 +49,7 @@ function Camera() {
     setTimeout(() => {
       set_update(update + 1 % 3);
       move_can();
-    }, 16);
+    }, 1000/60);
   }, [update]);
 }
 
