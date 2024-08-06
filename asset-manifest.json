@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/desert-punk-web/static/css/main.f6bbc3d0.css",
-    "main.js": "/desert-punk-web/static/js/main.284ac624.js",
-    "static/js/496.1a1575cd.chunk.js": "/desert-punk-web/static/js/496.1a1575cd.chunk.js",
+    "main.css": "/desert-punk-web/static/css/main.7f94aeca.css",
+    "main.js": "/desert-punk-web/static/js/main.6319d28e.js",
+    "static/js/488.4d201857.chunk.js": "/desert-punk-web/static/js/488.4d201857.chunk.js",
     "index.html": "/desert-punk-web/index.html",
-    "main.f6bbc3d0.css.map": "/desert-punk-web/static/css/main.f6bbc3d0.css.map",
-    "main.284ac624.js.map": "/desert-punk-web/static/js/main.284ac624.js.map",
-    "496.1a1575cd.chunk.js.map": "/desert-punk-web/static/js/496.1a1575cd.chunk.js.map"
+    "main.7f94aeca.css.map": "/desert-punk-web/static/css/main.7f94aeca.css.map",
+    "main.6319d28e.js.map": "/desert-punk-web/static/js/main.6319d28e.js.map",
+    "488.4d201857.chunk.js.map": "/desert-punk-web/static/js/488.4d201857.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f6bbc3d0.css",
-    "static/js/main.284ac624.js"
+    "static/css/main.7f94aeca.css",
+    "static/js/main.6319d28e.js"
   ]
 }
