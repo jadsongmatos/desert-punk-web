@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/desert-punk-web/static/css/main.f6bbc3d0.css",
+    "main.js": "/desert-punk-web/static/js/main.284ac624.js",
+    "static/js/496.1a1575cd.chunk.js": "/desert-punk-web/static/js/496.1a1575cd.chunk.js",
+    "index.html": "/desert-punk-web/index.html",
+    "main.f6bbc3d0.css.map": "/desert-punk-web/static/css/main.f6bbc3d0.css.map",
+    "main.284ac624.js.map": "/desert-punk-web/static/js/main.284ac624.js.map",
+    "496.1a1575cd.chunk.js.map": "/desert-punk-web/static/js/496.1a1575cd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f6bbc3d0.css",
+    "static/js/main.284ac624.js"
+  ]
+}
